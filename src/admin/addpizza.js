@@ -16,7 +16,7 @@ export default function addpizza() {
 
 const { success, error , loading} = pizzasState;
 
-  const dispatch = useDispatch();
+  const Dispatch = useDispatch();
   function addPizza(e){
       e.preventDefault();
       const pizza ={
@@ -33,7 +33,7 @@ const { success, error , loading} = pizzasState;
          
       }
       console.log(pizza.name);
-      dispatch(addNewPizza(pizza))
+      Dispatch(addNewPizza(pizza))
 
 
   }

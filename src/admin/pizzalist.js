@@ -8,11 +8,11 @@ import Pizza from "../component/Pizza";
 import { BrowserRouter, Link, Route , Routes, Switch }  from 'react-router-dom'
   
 export default function pizzalist() {
-  const dispatch = useDispatch();
+  const Dispatch = useDispatch();
   const pizzasState = useSelector((state) => state.getAllPizzaReducer);
   const { pizzas, error, loading } = pizzasState;
   useEffect(() => {
-    dispatch(getAllPizzas());
+    Dispatch(getAllPizzas());
   }, []);
   return (
     <div>
@@ -45,7 +45,7 @@ export default function pizzalist() {
                   </td>
                   <td>{item.category}</td>
                   <td>
-                  <i class="fas fa-trash-alt text-danger m-2 h4" onClick={()=>{dispatch(deletePizza(item._id))}}></i>
+                  <i class="fas fa-trash-alt text-danger m-2 h4" onClick={()=>{Dispatch(deletePizza(item._id))}}></i>
                   <Link to={`/admin/editpizza/${item._id}`}>  <i class="fas fa-pen-square text-primary m-2 h4"></i></Link> 
                   </td>
                 </tr>
