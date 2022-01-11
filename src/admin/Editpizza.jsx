@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { updatePizza, getPizzaById } from "../actions/pizzaAction";
 import Error from "../component/Error";
 import Loading from "../component/Loading";
-import Success from "../component/Success.jxs";
+import Success from "../component/Success.jsx";
 
 
 export default function Editpizza({ match }) {

@@ -4,7 +4,7 @@ import { userAction } from "../actions/userAction";
 import {userReducer} from '../reducers/userReducer';
 import Loading from '../component/Loading';
 import Error from '../component/Error';
-import Success from '../component/Success.jxs'
+import Success from '../component/Success.jsx'
 
 export default function Register() {
   const [name, setName] = useState('');
