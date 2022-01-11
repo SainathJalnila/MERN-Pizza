@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getUserOrders } from "../actions/OrderAction";
 import Loading from "../component/Loading";
 import Error from "../component/Error";
-import Success from "../component/Success";
+import Success from "../component/Success.jxs";
 
 export default function Order() {
   const dispatch = useDispatch();

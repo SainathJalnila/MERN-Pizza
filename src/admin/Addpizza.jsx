@@ -3,7 +3,7 @@ import {useDispatch , useSelector}  from 'react-redux'
 import { addNewPizza } from "../actions/pizzaAction";
 import Error from "../component/Error";
 import Loading from '../component/Loading';
-import Success from '../component/Success'
+import Success from '../component/Success.jxs'
 export default function Addpizza() {
   const [pizzaName, setPizzaNAme] = useState('');
   const [SmallVarient, setSmallVarient] = useState('');
