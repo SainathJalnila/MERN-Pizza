@@ -5,7 +5,7 @@ import Error from "../component/Error";
 import Loading from "../component/Loading";
 import Pizza from "../component/Pizza";
 
-export default function userlist() {    
+export default function Userlist() {    
     const dispatch = useDispatch();
   const userState = useSelector((state) => state.getalluserReducer);
   const { users, error, loading } = userState;

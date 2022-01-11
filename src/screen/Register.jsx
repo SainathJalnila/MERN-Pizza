@@ -6,7 +6,7 @@ import Loading from '../component/Loading';
 import Error from '../component/Error';
 import Success from '../component/Success'
 
-export default function register() {
+export default function Register() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -15,7 +15,7 @@ export default function register() {
   const userState = useSelector(state=>state.userReducer)
   const {loading , error , success} = userState;
 
-  function register() {
+  function registerPage() {
     if (password != cpassword) {
       alert("Please Match the Password and Confirm Password");
     } else {
@@ -71,7 +71,7 @@ export default function register() {
                 onChange={(e)=>{setCpassword(e.target.value)}}
                 required
               />
-              <button onClick={register} className="btn btn-success mb-3">Register</button>
+              <button onClick={registerPage} className="btn btn-success mb-3">Register</button>
               <br/>
               <a href="/login" className="text-dark ">Click Here to Login</a>
             </div>

@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { logoutAction } from "../actions/userAction";
 
 
-export default function navbar() {
+export default function Navbar() {
   const cartState = useSelector((state) => state.cartReducer);
   const userState = useSelector((state) => state.loginReducer);
   const { currentUser } = userState;

@@ -4,7 +4,7 @@ import { addNewPizza } from "../actions/pizzaAction";
 import Error from "../component/Error";
 import Loading from '../component/Loading';
 import Success from '../component/Success'
-export default function addpizza() {
+export default function Addpizza() {
   const [pizzaName, setPizzaNAme] = useState('');
   const [SmallVarient, setSmallVarient] = useState('');
   const [MediumVarient, setMediumVarient] = useState('');

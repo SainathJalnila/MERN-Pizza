@@ -1,16 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './component/navbar';
-import Home from './screen/home';
-import cart from './screen/cart';
-import login from './screen/login';
-import register from './screen/register';
+import Navbar from './component/Navbar';
+import Home from './screen/Home';
+import cart from './screen/Cart';
+import login from './screen/Login';
+import register from './screen/Register';
 
 
 
 import { BrowserRouter, Link, Route , Routes, Switch }  from 'react-router-dom'
 import Order from './screen/Order';
-import admin from './admin/admin';
+import admin from './admin/Admin';
 
 
 

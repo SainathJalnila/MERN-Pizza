@@ -6,7 +6,7 @@ import Loading from "../component/Loading";
 import Success from "../component/Success";
 
 
-export default function editpizza({ match }) {
+export default function Editpizza({ match }) {
   const [pizzaName, setPizzaNAme] = useState("");
   const [SmallVarient, setSmallVarient] = useState("");
   const [MediumVarient, setMediumVarient] = useState("");

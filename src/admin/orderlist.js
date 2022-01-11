@@ -6,7 +6,7 @@ import Loading from "../component/Loading";
 import Pizza from "../component/Pizza";
 
 
-export default function orderlist() {
+export default function Orderlist() {
   const dispatch = useDispatch();
   const getorderstate = useSelector((state) => state.getallorders);
   const { loading, error, order } = getorderstate;

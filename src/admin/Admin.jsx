@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { BrowserRouter, Link, Route, Routes, Switch } from "react-router-dom";
-import userlist from "./userlist";
-import orderlist from "./orderlist";
-import pizzalist from "./pizzalist";
-import addpizza from "./addpizza";
+import userlist from "./Userlist";
+import orderlist from "./Orderlist";
+import pizzalist from "./Pizzalist";
+import addpizza from "./Addpizza";
 
 import './admincss/style.css';
-import editpizza from "./editpizza";
-export default function admin() {
+import editpizza from "./Editpizza";
+export default function Admin() {
   const dispatch = useDispatch();
   const loginState = useSelector((state) => state.loginReducer);
   const { currentUser } = loginState;
@@ -24,16 +24,16 @@ export default function admin() {
         <h2>Admin Panel</h2>
         <ul className="bg-primary">
           <li>
-            <Link to={"/admin/userlist"}>User List</Link>
+            <Link to={"/admin/Userlist"}>User List</Link>
           </li>
           <li>
-            <Link to={"/admin/pizzalist"}>Pizza List</Link>
+            <Link to={"/admin/Pizzalist"}>Pizza List</Link>
           </li>
           <li>
-            <Link to={"/admin/orderlist"}>Order List</Link>
+            <Link to={"/admin/Orderlist"}>Order List</Link>
           </li>
           <li>
-            <Link to={"/admin/addpizza"}>Add New Pizza</Link>
+            <Link to={"/admin/Addpizza"}>Add New Pizza</Link>
           </li>
         </ul>
         

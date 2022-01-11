@@ -5,7 +5,7 @@ import Checkout from "../component/Checkout";
 import AOS from 'aos'
 import 'aos/dist/aos.css'; 
 
-export default function cart() {
+export default function Cart() {
   AOS.init()
   const cartState = useSelector((state) => state.cartReducer);
   const dispatch = useDispatch();

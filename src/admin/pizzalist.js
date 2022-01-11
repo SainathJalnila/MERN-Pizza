@@ -7,7 +7,7 @@ import Loading from "../component/Loading";
 import Pizza from "../component/Pizza";
 import { BrowserRouter, Link, Route , Routes, Switch }  from 'react-router-dom'
   
-export default function pizzalist() {
+export default function Pizzalist() {
   const Dispatch = useDispatch();
   const pizzasState = useSelector((state) => state.getAllPizzaReducer);
   const { pizzas, error, loading } = pizzasState;
